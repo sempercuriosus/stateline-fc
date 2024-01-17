@@ -1,3 +1,5 @@
+import About from './pages/about.jsx';
+
 import { useState, Fragment } from 'react';
 
 function App() {
@@ -5,7 +7,9 @@ function App() {
 
   return (
     <Fragment>
-      <main className='container section'></main>
+      <main className='container section'>
+        <About />
+      </main>
     </Fragment>
   );
 }
