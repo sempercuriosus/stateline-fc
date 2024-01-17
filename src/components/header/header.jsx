@@ -1,8 +1,10 @@
+import Nav from '../nav/nav';
+
 function Header() {
   return (
-    <div>
-      <p> Header Display Test </p>
-    </div>
+    <header>
+      <Nav />
+    </header>
   );
 }
 
