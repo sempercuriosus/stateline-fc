@@ -3,38 +3,38 @@ function Footer() {
     <footer
       id='footer'
       className='footer content'>
+      <div className='title is-5 has-text-centered'>
+        Contact Us | Stateline Family Chriopractic
+      </div>
+      <hr />
       <div
         id='contact'
         className='columns'>
         <div className='column'>
-          <div className='title is-5'>
-            Contact Us | Stateline Family Chriopractic
-          </div>
           <div>
-            <div className='title is-6'>📌 Address:</div>
+            <p className='title is-6'>📌 Address:</p>
             <p>856 Gold Hill Road #103</p>
             <p>Fort Mill, SC 29708</p>
             <p>Located Inside Kane Family Chiropractic</p>
-            <br />
-            <div>
-              <span className='title is-6'>📱 Phone: </span>
-              803-358-8340
-            </div>
 
-            <p></p>
+            <br />
+
+            <p>
+              <span className='title is-6'>📱 Phone: </span>
+            </p>
+            <p>803-358-8340</p>
           </div>
         </div>
 
         <div className='column'>
-          <div>
-            <a
-              href='statelinefamilychiro.janeapp.com'
-              target='_blank'
-              rel='noreferrer'>
-              Schedule An Appointment!
-            </a>
-            <div>statelinefamilychiro.janeapp.com</div>
-          </div>
+          <p>📅 Schedule An Appointment:</p>
+
+          <a
+            href='statelinefamilychiro.janeapp.com'
+            target='_blank'
+            rel='noreferrer'>
+            statelinefamilychiro.janeapp.com
+          </a>
         </div>
       </div>
       <div className='content has-text-centered'>

@@ -35,15 +35,17 @@ function Nav() {
 
           <a className='navbar-item'>Contact</a>
 
+          <a className='navbar-item'>About</a>
+
           <div className='navbar-item has-dropdown is-hoverable'>
             <a className='navbar-link'>Services</a>
 
             <div className='navbar-dropdown'>
-              <a className='navbar-item'>About</a>
-              <a className='navbar-item'>Jobs</a>
-              <a className='navbar-item'>Contact</a>
+              <a className='navbar-item'>Service 1</a>
+              <a className='navbar-item'>Service 2</a>
+              <a className='navbar-item'>Service 3</a>
               <hr className='navbar-divider' />
-              <a className='navbar-item'>Report an issue</a>
+              <a className='navbar-item'>FAQs</a>
             </div>
           </div>
         </div>
