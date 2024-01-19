@@ -1,22 +1,21 @@
 function About() {
   return (
-    <div className='container'>
+    <div className='section'>
+      <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
+      <hr />
       <div className=' columns'>
-        <aside className='column is-one-quarter'>
-          <h2 className='title is-3'>Dr. Katie Hulse, DC</h2>
-
+        <aside className='container column is-half-mobile is-one-quarter'>
+          <br />
           <img
             src='src/assets/dr-katie-pic.jpg'
             alt='Dr. Katie Picture'
-            // height={325}
-            // width={245}
+            height={325}
+            width={245}
             className='image'></img>
+          <h2 className='title is-4'>Dr. Katie Hulse, DC</h2>
         </aside>
 
         <div className='column content'>
-          <h1 className='title has-text-centered'>Meet Dr. Katie</h1>
-          <hr />
-
           <p>
             I’m Dr. Katie and I started Stateline Family Chiropractic. I’m from
             a small town in Wisconsin and my family and I recently moved to Tega
