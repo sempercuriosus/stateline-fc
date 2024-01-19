@@ -27,7 +27,9 @@ function Footer() {
         </div>
 
         <div className='column'>
-          <p>📅 Schedule An Appointment:</p>
+          <p>
+            <span className='title is-6'>📅 Schedule An Appointment:</span>
+          </p>
 
           <a
             href='statelinefamilychiro.janeapp.com'
