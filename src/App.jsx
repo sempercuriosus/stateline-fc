@@ -1,13 +1,14 @@
 import About from './pages/about.jsx';
-
-import { useState, Fragment } from 'react';
+import Services from './pages/services.jsx';
+import Contact from './pages/contact.jsx';
+import { Fragment } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <Fragment>
       <main className='container section'>
+        <Services />
+        <Contact />
         <About />
       </main>
     </Fragment>

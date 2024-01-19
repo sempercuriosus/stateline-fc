@@ -66,8 +66,7 @@ function About() {
               <strong>Palmer College</strong>– Doctorate Graduated Summa Cum
               Laude
               <ul>
-                <li>Received Academic</li>
-                <li>Excellence Award</li>
+                <li>Received Academic Excellence Award</li>
               </ul>
             </li>
 
@@ -77,7 +76,7 @@ function About() {
             </li>
 
             <li>
-              <strong>ICPA</strong>– – Webster Certified
+              <strong>ICPA</strong>– Webster Certified
             </li>
           </ul>
         </div>
