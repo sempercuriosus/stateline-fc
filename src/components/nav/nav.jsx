@@ -40,9 +40,9 @@ function Nav() {
           <div className='navbar-item has-dropdown is-hoverable'>
             <a className='navbar-link'>Services</a>
             <div className='navbar-dropdown'>
+              <a className='navbar-item'>Prenatal</a>
               <a className='navbar-item'>Pediatric</a>
               <a className='navbar-item'>Family</a>
-              <a className='navbar-item'>Prenatal</a>
               {/* <a className='navbar-item'></a> */}
               <hr className='navbar-divider' />
               <a className='navbar-item'>FAQs</a>

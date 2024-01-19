@@ -1,14 +1,20 @@
-import About from './pages/about.jsx';
-import Services from './pages/services.jsx';
-import Contact from './pages/contact.jsx';
 import { Fragment } from 'react';
+import { Intro, About, Services, NewPatient } from './pages';
+// import Services from './pages/services.jsx';
+// import Contact from './pages/contact.jsx';
+import '../src/App.css';
 
 function App() {
   return (
     <Fragment>
       <main className='container section'>
+        <Intro />
+
         <Services />
-        <Contact />
+        {/* <Contact /> */}
+
+        <NewPatient />
+
         <About />
       </main>
     </Fragment>
