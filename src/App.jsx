@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Intro, About, Services, NewPatient } from './pages';
+import { Intro, About, Services, NewPatient, FAQ } from './pages';
 // import Services from './pages/services.jsx';
 // import Contact from './pages/contact.jsx';
 import '../src/App.css';
@@ -17,6 +17,8 @@ function App() {
         <NewPatient />
 
         <About />
+
+        <FAQ />
       </main>
       <Routes>
         <Route>Home</Route>
@@ -25,7 +27,7 @@ function App() {
         <Route>Pediatric</Route>
         <Route>Prenatal</Route>
         <Route>Family</Route>
-        <Route></Route>
+        <Route>FAQ</Route>
       </Routes>
     </Fragment>
   );
