@@ -2,6 +2,14 @@ body {
   background-color: rgb(245, 245, 245)
 }
 
+html {
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
 main {
   background-color: white;
 }
