@@ -1,9 +1,7 @@
 import { Fragment } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Intro, About, Services, NewPatient, FAQ } from './pages';
-// import Services from './pages/services.jsx';
-// import Contact from './pages/contact.jsx';
-import '../src/App.css';
+import './styles/App.css';
 
 function App() {
   return (
