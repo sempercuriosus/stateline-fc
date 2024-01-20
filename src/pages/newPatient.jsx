@@ -1,6 +1,6 @@
 function NewPatient() {
   return (
-    <div className='section'>
+    <section className='section'>
       <h3 className='title is-3 has-text-centered'>New Patient Information</h3>
       <hr />
 
@@ -66,7 +66,7 @@ function NewPatient() {
         for your body and may use a combination but please let her know if you
         have any preferences.
       </p>
-    </div>
+    </section>
   );
 }
 

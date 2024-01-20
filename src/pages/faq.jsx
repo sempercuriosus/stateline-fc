@@ -1,9 +1,10 @@
 function FAQ() {
   return (
-    <div>
+    <section>
       <p> FAQ Display Test </p>
-    </div>
+    </section>
   );
 }
 
 export default FAQ;
+

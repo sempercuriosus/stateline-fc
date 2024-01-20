@@ -1,10 +1,10 @@
 function About() {
   return (
-    <div className='section'>
+    <section className='section'>
       <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
       <hr />
       <div className=' columns'>
-        <aside className='container column is-half-mobile is-one-quarter'>
+        <aside className='container column is-full-mobile is-one-quarter'>
           <br />
           <img
             src='src/assets/dr-katie-pic.jpg'
@@ -57,30 +57,32 @@ function About() {
             for reading and I’ll see you at the office!
           </p>
 
-          <h1 className='title has-text-centered'>Education</h1>
-          <hr />
+          <section className='section'>
+            <h1 className='title has-text-centered'>Education</h1>
+            <hr />
 
-          <ul>
-            <li>
-              <strong>Palmer College</strong>– Doctorate Graduated Summa Cum
-              Laude
-              <ul>
-                <li>Received Academic Excellence Award</li>
-              </ul>
-            </li>
+            <ul>
+              <li>
+                <strong>Palmer College</strong>– Doctorate Graduated Summa Cum
+                Laude
+                <ul>
+                  <li>Received Academic Excellence Award</li>
+                </ul>
+              </li>
 
-            <li>
-              <strong>University of Wisconsin</strong>– LaCrosse – B.S.Biology
-              Biomedical
-            </li>
+              <li>
+                <strong>University of Wisconsin</strong>– LaCrosse – B.S.Biology
+                Biomedical
+              </li>
 
-            <li>
-              <strong>ICPA</strong>– Webster Certified
-            </li>
-          </ul>
+              <li>
+                <strong>ICPA</strong>– Webster Certified
+              </li>
+            </ul>
+          </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
