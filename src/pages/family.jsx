@@ -1,6 +1,6 @@
 function Family() {
   return (
-    <div className='section'>
+    <section className='section'>
       <p>Parenting isn’t easy.</p>
       <p>
         Every day we’re pulled in a thousand different directions at once. We’re
@@ -29,7 +29,7 @@ function Family() {
         This is what we focus on at Stateline Family Chiropractic and we cannot
         wait to provide incredible care to your entire family!
       </p>
-    </div>
+    </section>
   );
 }
 

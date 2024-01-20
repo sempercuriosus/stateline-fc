@@ -1,6 +1,6 @@
 function Prenatal() {
   return (
-    <div className='section'>
+    <section className='section'>
       <p>
         Taking care of pregnant moms means taking care of the whole family. The
         journey during preconception, pregnancy, labor and delivery and the
@@ -38,7 +38,7 @@ function Prenatal() {
         experienced in taking great care of mom before, during and after
         pregnancy.
       </p>
-    </div>
+    </section>
   );
 }
 

@@ -1,8 +1,8 @@
 function Intro() {
   return (
     <>
-      <div className='section'>
-        <h1 className='title is-1 has-text-centered'>Welcome! </h1>
+      <section className='section'>
+        <h1 className='title is- has-text-centered'>Welcome! </h1>
         <h2 className='title is-3 has-text-centered'>
           We are Stateline Family Chiropractic
         </h2>
@@ -13,7 +13,7 @@ function Intro() {
           and our goal is to be your partner in health in order to help your
           body function as intended and heal itself from life’s stressors.
         </p>
-      </div>
+      </section>
       <hr />
     </>
   );

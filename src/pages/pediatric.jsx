@@ -1,6 +1,6 @@
 function Pediatric() {
   return (
-    <div className='section'>
+    <section className='section'>
       <p>
         {' '}
         While kids are designed to be healthy, strong and resilient, right now
@@ -22,7 +22,7 @@ function Pediatric() {
         Through our neurologically based and individualized approach, we can
         help your child live their best lives!
       </p>
-    </div>
+    </section>
   );
 }
 
