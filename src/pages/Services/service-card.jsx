@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './service-card.css';
 
 function ServiceCard({
   serviceTitle = '',
@@ -10,10 +11,12 @@ function ServiceCard({
     <>
       {/* Column */}
       <section
-        className='column has-ratio block'
-        style={{
-          height: '100vh',
-        }}>
+        id={'service-' + serviceTitle}
+        className='column has-ratio block vert-height'
+        // style={{
+        //   height: '100vh',
+        // }}
+      >
         <figure className='image is-128x128'>
           <img
             src={serviceImageSource}
