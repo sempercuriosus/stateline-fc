@@ -6,7 +6,7 @@ import './styles/App.css';
 function App() {
   return (
     <Fragment>
-      <main className='container section'>
+      <main className='container section has-navbar-fixed-top'>
         <Intro />
 
         <Services />
