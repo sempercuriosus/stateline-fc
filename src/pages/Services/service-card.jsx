@@ -17,15 +17,14 @@ function ServiceCard({
         //   height: '100vh',
         // }}
       >
-        <figure className='image is-128x128'>
-          <img
-            src={serviceImageSource}
-            alt={serviceImageAlt}
-          />
-        </figure>
-
         <div className='block'>
           <h3 className='title is-4 block'>{serviceTitle}</h3>
+          <figure className='image is-128x128'>
+            <img
+              src={serviceImageSource}
+              alt={serviceImageAlt}
+            />
+          </figure>
           <p>{serviceDescription}</p>
         </div>
       </section>
