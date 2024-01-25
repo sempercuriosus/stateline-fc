@@ -1,18 +1,19 @@
 const currentEmailAddress = 'statelinefamilychiro@proton.me';
 const hours = {
-  Monday: '3pm to 6pm',
-  Tuesday: '3pm to 6pm',
-  Wednesday: '3pm to 6pm',
-  Thursday: '3pm to 6pm',
-  Friday: '3pm to 6pm',
-  Saturday: '8am to 11am',
+  Monday: '3pm until 6pm',
+  Tuesday: '3pm until 6pm',
+  Wednesday: '3pm until 6pm',
+  Thursday: '3pm until 6pm',
+  Friday: '3pm until 6pm',
+  Saturday: '8am until 11am',
   Sunday: 'Closed',
+  Delim: '-',
 };
 
 function Contact() {
   return (
     <>
-      <div className='title is-5 has-text-centered'>
+      <div className='title is-5 has-text-centered snap-stop'>
         Contact Us | Stateline Family Chriopractic
       </div>
       <hr />
@@ -44,8 +45,8 @@ function Contact() {
           <div className='block'>
             <a href={`mailto:${currentEmailAddress}`}>Send us an Email</a>
           </div>
-          <p className='has-text-danger'>
-            Important Notice: Do not include personal information or private
+          <p className='has-text-danger title is-6'>
+            Important Note: Do not include personal information or private
             medical information inside the email.
           </p>
         </div>
@@ -55,13 +56,27 @@ function Contact() {
           <p>
             <span className='title is-6'>🕝 Hours:</span>
           </p>
-          <p>Monday: {hours.Monday} </p>
-          <p>Tuesday: {hours.Tuesday} </p>
-          <p>Wednesday: {hours.Wednesday} </p>
-          <p>Thursday: {hours.Thursday} </p>
-          <p>Friday: {hours.Friday} </p>
-          <p>Saturday: {hours.Saturday} </p>
-          <p>Sunday: {hours.Sunday} </p>
+          <p>
+            Monday {hours.Delim} {hours.Monday}{' '}
+          </p>
+          <p>
+            Tuesday {hours.Delim} {hours.Tuesday}{' '}
+          </p>
+          <p>
+            Wednesday {hours.Delim} {hours.Wednesday}{' '}
+          </p>
+          <p>
+            Thursday {hours.Delim} {hours.Thursday}{' '}
+          </p>
+          <p>
+            Friday {hours.Delim} {hours.Friday}{' '}
+          </p>
+          <p>
+            Saturday {hours.Delim} {hours.Saturday}{' '}
+          </p>
+          <p>
+            Sunday {hours.Delim} {hours.Sunday}{' '}
+          </p>
         </div>
 
         {/* New Column */}

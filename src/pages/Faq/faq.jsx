@@ -1,6 +1,6 @@
 function FAQ() {
   return (
-    <section>
+    <section className=' snap-stop'>
       <p> FAQ Display Test </p>
     </section>
   );
