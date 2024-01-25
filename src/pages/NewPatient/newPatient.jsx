@@ -1,3 +1,7 @@
+const handleCick = () => {
+  alert('Add Link for Schedule');
+};
+
 function NewPatient() {
   return (
     <>
@@ -7,7 +11,11 @@ function NewPatient() {
         </h3>
 
         <div className='block'>
-          <button className='button is-info'>Get Forms</button>
+          <button
+            className='button is-info'
+            onClick={handleCick}>
+            Schedule An Appointment
+          </button>
         </div>
 
         <p className='block'>
