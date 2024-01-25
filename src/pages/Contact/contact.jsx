@@ -1,4 +1,13 @@
 const currentEmailAddress = 'statelinefamilychiro@proton.me';
+const hours = {
+  Monday: '3pm to 6pm',
+  Tuesday: '3pm to 6pm',
+  Wednesday: '3pm to 6pm',
+  Thursday: '3pm to 6pm',
+  Friday: '3pm to 6pm',
+  Saturday: '8am to 11am',
+  Sunday: 'Closed',
+};
 
 function Contact() {
   return (
@@ -39,6 +48,20 @@ function Contact() {
             Important Notice: Do not include personal information or private
             medical information inside the email.
           </p>
+        </div>
+
+        {/* New Column */}
+        <div className='column'>
+          <p>
+            <span className='title is-6'>🕝 Hours:</span>
+          </p>
+          <p>Monday: {hours.Monday} </p>
+          <p>Tuesday: {hours.Tuesday} </p>
+          <p>Wednesday: {hours.Wednesday} </p>
+          <p>Thursday: {hours.Thursday} </p>
+          <p>Friday: {hours.Friday} </p>
+          <p>Saturday: {hours.Saturday} </p>
+          <p>Sunday: {hours.Sunday} </p>
         </div>
 
         {/* New Column */}
