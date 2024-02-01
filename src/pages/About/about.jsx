@@ -4,15 +4,17 @@ function About() {
       <section className='section snap-stop'>
         <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
         <div className=' columns'>
-          <aside className='container column is-full-mobile is-one-quarter'>
-            <br />
+          <aside className='column is-half-mobile  is-one-quarter container'>
+            {/* <br /> */}
             <img
               src='src/assets/dr-katie-pic.jpg'
               alt='Dr. Katie Picture'
               height={325}
               width={245}
               className='image'></img>
-            <h2 className='title is-4'>Dr. Katie Hulse, DC</h2>
+            <h2 className='title is-4 has-text-centered'>
+              Dr. Katie Hulse, DC
+            </h2>
           </aside>
 
           <div className='column content'>
