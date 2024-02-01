@@ -6,7 +6,7 @@ html {
   scroll-snap-type: y proximity;
 }
 
-section {
+.snap-stop {
   scroll-snap-align: start;
 }
 

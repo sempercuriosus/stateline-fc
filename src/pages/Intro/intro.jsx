@@ -14,7 +14,7 @@ function Intro() {
           body function as intended and heal itself from life’s stressors.
         </p>
       </section>
-      <hr />
+      <hr className='snap-stop' />
     </>
   );
 }

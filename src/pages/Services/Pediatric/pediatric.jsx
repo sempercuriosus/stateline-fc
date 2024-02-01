@@ -5,7 +5,7 @@ function Pediatric() {
         {' '}
         While kids are designed to be healthy, strong and resilient, right now
         for many families, that isn’t the case. Currently over 40% of kids have
-        a chronic health condition such as Autism, ADHD, Asthma or epilepsy. The
+        a chronic health condition such as autism, ADHD, asthma or epilepsy. The
         path to these chronic conditions begins as a series of acute, early
         childhood illnesses that traditional medicine cannot get a handle on.
         Things like colic, constipation, recurrent ear infections, allergies,
