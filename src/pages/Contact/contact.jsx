@@ -1,14 +1,8 @@
-const currentEmailAddress = 'statelinefamilychiro@proton.me';
-const hours = {
-  Monday: '3pm until 6pm',
-  Tuesday: '3pm until 6pm',
-  Wednesday: '3pm until 6pm',
-  Thursday: '3pm until 6pm',
-  Friday: '3pm until 6pm',
-  Saturday: '8am until 11am',
-  Sunday: 'Closed',
-  Delim: '-',
-};
+import contactInfo from './contact.js';
+
+const contact = contactInfo.contactInfo;
+
+console.log(contact);
 
 function Contact() {
   return (
@@ -33,49 +27,24 @@ function Contact() {
         </div>
 
         {/* New Column */}
-        <div className='column'>
-          <p>
-            <span className='title is-6'>📱 Phone: </span>
-          </p>
-          <p>803-358-8340</p>
-
-          <p>
-            <span className='title is-6'>📧 Email: </span>
-          </p>
+        <div className='column block'>
           <div className='block'>
-            <a href={`mailto:${currentEmailAddress}`}>Send us an Email</a>
+            <p>
+              <span className='title is-6'>📱 Phone: </span>
+            </p>
+            <a href={`tel:${contact.phoneNumber}`}>{contact.phoneNumber}</a>
+          </div>
+
+          <div className='block'>
+            <p>
+              <span className='title is-6'>📧 Email: </span>
+            </p>
+
+            <a href={`mailto:${contact.email}`}>Send us an Email</a>
           </div>
           <p className='has-text-danger title is-6'>
             Important Note: Do not include personal information or private
             medical information inside the email.
-          </p>
-        </div>
-
-        {/* New Column */}
-        <div className='column'>
-          <p>
-            <span className='title is-6'>🕝 Hours:</span>
-          </p>
-          <p>
-            Monday {hours.Delim} {hours.Monday}{' '}
-          </p>
-          <p>
-            Tuesday {hours.Delim} {hours.Tuesday}{' '}
-          </p>
-          <p>
-            Wednesday {hours.Delim} {hours.Wednesday}{' '}
-          </p>
-          <p>
-            Thursday {hours.Delim} {hours.Thursday}{' '}
-          </p>
-          <p>
-            Friday {hours.Delim} {hours.Friday}{' '}
-          </p>
-          <p>
-            Saturday {hours.Delim} {hours.Saturday}{' '}
-          </p>
-          <p>
-            Sunday {hours.Delim} {hours.Sunday}{' '}
           </p>
         </div>
 
@@ -91,6 +60,38 @@ function Contact() {
             rel='noreferrer'>
             statelinefamilychiro.janeapp.com
           </a>
+        </div>
+
+        {/* New Column */}
+        <div className='column'>
+          <p>
+            <span className='title is-6'>🕝 Hours:</span>
+          </p>
+          <p>
+            <strong>Monday</strong> {contact.hours.Delim} {contact.hours.Monday}{' '}
+          </p>
+          <p>
+            <strong>Tuesday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.Tuesday}{' '}
+          </p>
+          <p>
+            <strong>Wednesday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.Wednesday}{' '}
+          </p>
+          <p>
+            <strong>Thursday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.Thursday}{' '}
+          </p>
+          <p>
+            <strong>Friday</strong> {contact.hours.Delim} {contact.hours.Friday}{' '}
+          </p>
+          <p>
+            <strong>Saturday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.Saturday}{' '}
+          </p>
+          <p>
+            <strong>Sunday</strong> {contact.hours.Delim} {contact.hours.Sunday}{' '}
+          </p>
         </div>
       </div>
     </>
