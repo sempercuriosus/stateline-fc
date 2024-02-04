@@ -56,10 +56,10 @@ function Contact() {
           </p>
 
           <a
-            href='statelinefamilychiro.janeapp.com'
+            href={contact.scheduler}
             target='_blank'
             rel='noreferrer'>
-            statelinefamilychiro.janeapp.com
+            statelinefamilychiro
           </a>
         </div>
 

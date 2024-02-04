@@ -1,5 +1,9 @@
-const handleCick = () => {
-  alert('Add Link for Schedule');
+import contactInfo from '../Contact/contact.js';
+
+const contact = contactInfo.contactInfo;
+
+const openScheduler = (targetedLocation) => {
+  window.open(targetedLocation, '_blank');
 };
 
 function NewPatient() {
@@ -13,7 +17,9 @@ function NewPatient() {
         <div className='block'>
           <button
             className='button is-info'
-            onClick={handleCick}>
+            onClick={() => {
+              openScheduler(contact.scheduler);
+            }}>
             Schedule An Appointment
           </button>
         </div>
