@@ -2,8 +2,6 @@ import contactInfo from './contact.js';
 
 const contact = contactInfo.contactInfo;
 
-console.log(contact);
-
 function Contact() {
   return (
     <>
@@ -20,9 +18,12 @@ function Contact() {
         <div className='column'>
           <div>
             <p className='title is-6'>📌 Address:</p>
-            <p>856 Gold Hill Road #103</p>
-            <p>Fort Mill, SC 29708</p>
-            <p>Located Inside Kane Family Chiropractic</p>
+            <p>{contact.address.line1}</p>
+            <p>
+              {contact.address.city}, {contact.address.state}{' '}
+              {contact.address.zip}
+            </p>
+            <p>{contact.address.note}</p>
           </div>
         </div>
 
