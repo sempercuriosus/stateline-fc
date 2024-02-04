@@ -1,7 +1,9 @@
 function About() {
   return (
     <>
-      <section className='section snap-stop'>
+      <section
+        id='about'
+        className='section snap-stop'>
         <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
         <div className=' columns'>
           <aside className='column is-half-mobile  is-one-quarter container'>

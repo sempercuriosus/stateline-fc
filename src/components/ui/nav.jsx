@@ -1,3 +1,10 @@
+const handleNavClick = (selectedLocation) => {
+  const element = document.getElementById(selectedLocation);
+  element?.scrollIntoView({
+    behavior: 'smooth',
+  });
+};
+
 function Nav() {
   return (
     <>
@@ -35,7 +42,16 @@ function Nav() {
           {/* Start */}
           <div className='navbar-start'>
             {/* Home */}
-            <a className='navbar-item'>Home</a>
+            <a
+              className='navbar-item'
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth',
+                })
+              }>
+              Home
+            </a>
 
             {/* Dropdown */}
             <div className='navbar-item has-dropdown is-hoverable'>
@@ -45,22 +61,30 @@ function Nav() {
                 <a className='navbar-item'>Pediatric</a>
                 <a className='navbar-item'>Family</a>
                 {/* <a className='navbar-item'></a> */}
-                <hr className='navbar-divider' />
-                <a className='navbar-item'>FAQs</a>
+                {/* <hr className='navbar-divider' /> */}
               </div>
             </div>
 
-            {/* Contact */}
-            <a className='navbar-item'>Contact</a>
-
             {/* About */}
-            <a className='navbar-item'>About</a>
+            <a
+              className='navbar-item'
+              onClick={() => {
+                handleNavClick('about');
+              }}>
+              About
+            </a>
           </div>
 
           <div className='navbar-end'>
-            <div className='navbar-item'>
-              <p>Schedule An Appointment</p>
-            </div>
+            {/* Contact */}
+            <a
+              className='navbar-item'
+              onClick={() => {
+                handleNavClick('footer');
+              }}>
+              Contact
+            </a>
+            <a className='navbar-item'>Schedule An Appointment</a>
           </div>
         </div>
         {/* End */}
