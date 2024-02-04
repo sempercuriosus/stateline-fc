@@ -2,8 +2,6 @@ import contactInfo from './contact.js';
 
 const contact = contactInfo.contactInfo;
 
-console.log(contact);
-
 function Contact() {
   return (
     <>
