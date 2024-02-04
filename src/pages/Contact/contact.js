@@ -19,6 +19,7 @@ const contactInfo = {
     zip: '29708',
     note: 'Located Inside Kane Family Chiropractic',
   },
+  scheduler: 'https://statelinefamilychiro.janeapp.com/',
 };
 
 export default { contactInfo };

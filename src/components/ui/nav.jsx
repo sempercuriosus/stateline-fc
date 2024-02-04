@@ -1,8 +1,16 @@
+import contactInfo from '../../pages/Contact/contact.js';
+
+const contact = contactInfo.contactInfo;
+
 const handleNavClick = (selectedLocation) => {
   const element = document.getElementById(selectedLocation);
   element?.scrollIntoView({
     behavior: 'smooth',
   });
+};
+
+const handleNavClickExternal = (targetedLocation) => {
+  window.open(targetedLocation, '_blank');
 };
 
 function Nav() {
@@ -84,7 +92,15 @@ function Nav() {
               }}>
               Contact
             </a>
-            <a className='navbar-item'>Schedule An Appointment</a>
+
+            <a
+              className='navbar-item'
+              onClick={() => {
+                console.log(contact.scheduler);
+                handleNavClickExternal(contact.scheduler);
+              }}>
+              Schedule An Appointment
+            </a>
           </div>
         </div>
         {/* End */}
