@@ -1,3 +1,7 @@
+import contactInfo from '../Contact/contact.js';
+
+const contact = contactInfo.contactInfo;
+
 function FAQ() {
   return (
     <section className='section snap-stop'>
@@ -59,7 +63,9 @@ function FAQ() {
         <p>
           You bet! We open up what we can online but many times (especially for
           new patients) we are able to get you scheduled at times that don’t
-          show up online.
+          show up online.{' '}
+          <a href={`tel:${contact.phoneNumber}`}>{contact.phoneNumber}</a> Call
+          or Text us for an appoinment.
         </p>
       </div>
 
