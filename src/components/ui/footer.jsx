@@ -1,10 +1,14 @@
 import { Contact } from '../../pages';
+import { useRef } from 'react';
 
 function Footer() {
+  const scrollToRef = useRef();
+
   return (
     <footer
       id='footer'
-      className='footer content'>
+      className='footer content'
+      ref={scrollToRef}>
       <Contact />
 
       <br />
