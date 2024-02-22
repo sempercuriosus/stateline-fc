@@ -6,6 +6,7 @@ function ServiceCard({
   serviceDescription = '',
   serviceImageSource = '',
   serviceImageAlt = '',
+  openLocation = '',
 }) {
   return (
     <>
@@ -27,6 +28,15 @@ function ServiceCard({
           </figure>
           <p>{serviceDescription}</p>
         </div>
+        <div className='block'>
+          <button
+            className='button is-info'
+            onClick={() => {
+              openLocation;
+            }}>
+            Learn More!
+          </button>
+        </div>
       </section>
     </>
   );
@@ -37,6 +47,7 @@ ServiceCard.propTypes = {
   serviceDescription: PropTypes.string.isRequired,
   serviceImageSource: PropTypes.string.isRequired,
   serviceImageAlt: PropTypes.string.isRequired,
+  openLocation: PropTypes.string.isRequired,
 };
 
 export default ServiceCard;
