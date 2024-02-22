@@ -18,6 +18,7 @@ function Services() {
             and support moms from conception to birth and beyond'
             serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
             serviceImageAlt='Prenatal Image Placeholder'
+            openLocation='/Prenatal'
           />
 
           {/* Service - Pediatric */}
@@ -28,6 +29,7 @@ function Services() {
             infants to chronically sick kids to sensory and spectrum challenges.'
             serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
             serviceImageAlt='Pediatric Image Placeholder'
+            openLocation='/Pediatric'
           />
 
           {/* Service - Family */}
@@ -39,6 +41,7 @@ function Services() {
             enjoy life better, together!'
             serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
             serviceImageAlt='Family Image Placeholder'
+            openLocation='/Family'
           />
         </div>
       </section>
