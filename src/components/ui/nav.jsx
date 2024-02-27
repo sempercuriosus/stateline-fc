@@ -32,7 +32,7 @@ function Nav() {
             />
           </a>
 
-          <a
+          {/* <a
             role='button'
             className='navbar-burger'
             aria-label='menu'
@@ -41,7 +41,7 @@ function Nav() {
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
-          </a>
+          </a> */}
         </div>
 
         <div
@@ -61,17 +61,37 @@ function Nav() {
               Home
             </a>
 
-            {/* Dropdown */}
+            {/* Services */}
+            <a
+              className='navbar-item'
+              onClick={() => {
+                handleNavClick('services');
+              }}>
+              Services
+            </a>
+
+            {/* Dropdown 
             <div className='navbar-item has-dropdown is-hoverable'>
-              <a className='navbar-link'>Services</a>
-              <div className='navbar-dropdown'>
-                <a className='navbar-item'>Prenatal</a>
-                <a className='navbar-item'>Pediatric</a>
-                <a className='navbar-item'>Family</a>
-                {/* <a className='navbar-item'></a> */}
-                {/* <hr className='navbar-divider' /> */}
+              {/* <div className='navbar-dropdown'>
+                <a
+                  className='navbar-item'
+                  to='/Prenatal'>
+                  Prenatal
+                </a>
+                <a
+                  className='navbar-item'
+                  to='/Pediatric'>
+                  Pediatric
+                </a>
+                <a
+                  className='navbar-item'
+                  to='/Family'>
+                  Family
+                </a>
+                <a className='navbar-item'></a>
+                <hr className='navbar-divider' />
               </div>
-            </div>
+            </div> */}
 
             {/* About */}
             <a
@@ -81,9 +101,6 @@ function Nav() {
               }}>
               About
             </a>
-          </div>
-
-          <div className='navbar-end'>
             {/* Contact */}
             <a
               className='navbar-item'
@@ -92,7 +109,9 @@ function Nav() {
               }}>
               Contact
             </a>
+          </div>
 
+          <div className='navbar-end'>
             <a
               className='navbar-item'
               onClick={() => {
