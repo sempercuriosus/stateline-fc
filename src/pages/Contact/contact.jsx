@@ -41,11 +41,11 @@ function Contact() {
               <span className='title is-6'>📧 Email: </span>
             </p>
 
-            <a href={`mailto:${contact.email}`}>Send us an Email</a>
+            <a href={`mailto:${contact.email}`}>{contact.email}</a>
           </div>
           <p className='has-text-danger title is-6'>
-            Important Note: Do not include personal information or private
-            medical information inside the email.
+            Important Note: Do not include personal or private medical
+            information inside the email.
           </p>
         </div>
 
