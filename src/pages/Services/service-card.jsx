@@ -14,29 +14,31 @@ function ServiceCard({
       {/* Column */}
       <section
         id={'service-card-' + serviceTitle.toLowerCase()}
-        className='card column has-ratio block vert-height'
+        className='card column has-ratio block'
         style={{
-          minHeight: '400px',
-          maxHeight: '600px',
-          margin: '1em',
+          // minHeight: '500px',
+          //   maxHeight: '500px',
+          margin: '0.25em',
         }}>
         <div className='block'>
-          <h3 className='title is-4 block'>{serviceTitle}</h3>
-          <figure className='image is-128x128'>
+          <h3 className='title is-4 block has-text-centered'>{serviceTitle}</h3>
+          <figure className='container image is-128x128'>
             <img
               src={serviceImageSource}
               alt={serviceImageAlt}
             />
           </figure>
-          <p>{serviceDescription}</p>
+          <p className='card-content'>{serviceDescription}</p>
         </div>
-        <div className='block'>
+        <footer
+          className='card-footer'
+          style={{ marginTop: 'auto' }}>
           <button
-            className='button is-info js-modal-trigger'
+            className='button is-info card-footer-item'
             onClick={() => onOpenModal(serviceType)}>
             Learn More!
           </button>
-        </div>
+        </footer>
       </section>
     </>
   );
