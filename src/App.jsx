@@ -1,33 +1,13 @@
-import { Fragment } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Intro, About, Services, NewPatient, FAQ } from './pages';
+import Home from './pages/Home/home';
 import './styles/App.css';
 
 function App() {
   return (
-    <Fragment>
+    <>
       <main className='container section has-navbar-fixed-top'>
-        <Intro />
-
-        <Services />
-        {/* <Contact /> */}
-
-        <NewPatient />
-
-        <About />
-
-        <FAQ />
+        <Home />
       </main>
-      <Routes>
-        <Route>Home</Route>
-        <Route>About</Route>
-        <Route>Contact</Route>
-        <Route>Pediatric</Route>
-        <Route>Prenatal</Route>
-        <Route>Family</Route>
-        <Route>FAQ</Route>
-      </Routes>
-    </Fragment>
+    </>
   );
 }
 

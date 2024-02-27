@@ -6,18 +6,20 @@ function ServiceCard({
   serviceDescription = '',
   serviceImageSource = '',
   serviceImageAlt = '',
-  openLocation = '',
+  onOpenModal = '',
+  serviceType = '',
 }) {
   return (
     <>
       {/* Column */}
       <section
-        id={'service-' + serviceTitle}
-        className='column has-ratio block vert-height'
-        // style={{
-        //   height: '100vh',
-        // }}
-      >
+        id={'service-card-' + serviceTitle.toLowerCase()}
+        className='card column has-ratio block vert-height'
+        style={{
+          minHeight: '400px',
+          maxHeight: '600px',
+          margin: '1em',
+        }}>
         <div className='block'>
           <h3 className='title is-4 block'>{serviceTitle}</h3>
           <figure className='image is-128x128'>
@@ -30,10 +32,8 @@ function ServiceCard({
         </div>
         <div className='block'>
           <button
-            className='button is-info'
-            onClick={() => {
-              openLocation;
-            }}>
+            className='button is-info js-modal-trigger'
+            onClick={() => onOpenModal(serviceType)}>
             Learn More!
           </button>
         </div>
@@ -47,7 +47,8 @@ ServiceCard.propTypes = {
   serviceDescription: PropTypes.string.isRequired,
   serviceImageSource: PropTypes.string.isRequired,
   serviceImageAlt: PropTypes.string.isRequired,
-  openLocation: PropTypes.string.isRequired,
+  onOpenModal: PropTypes.func.isRequired,
+  serviceType: PropTypes.string.isRequired,
 };
 
 export default ServiceCard;
