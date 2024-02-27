@@ -1,6 +1,8 @@
 function Pediatric() {
   return (
     <section className='section'>
+      <h1 className='title is-3'>Pediatric</h1>
+
       <p>
         {' '}
         While kids are designed to be healthy, strong and resilient, right now
@@ -13,15 +15,23 @@ function Pediatric() {
         don’t “grow out” of them, the kids just “grow into” these chronic
         challenges.
       </p>
+
+      <br />
+
       <p>
         At Stateline Family Chiropractic, we know kids are meant to be healthy,
         not sick. We see kids transform and reach new levels of health,
         happiness and well-being right before our eyes!
       </p>
+
+      <br />
+
       <p>
         Through our neurologically based and individualized approach, we can
         help your child live their best lives!
       </p>
+
+      <br />
     </section>
   );
 }
