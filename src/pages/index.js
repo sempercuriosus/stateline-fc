@@ -4,7 +4,7 @@ export { default as Intro } from './Intro/intro.jsx';
 
 export { default as Contact } from './Contact/contact.jsx';
 
-export { default as FAQ } from './FAQ/faq.jsx';
+export { default as FAQ } from './Faq/faq.jsx';
 
 export { default as NewPatient } from './NewPatient/newPatient.jsx';
 
