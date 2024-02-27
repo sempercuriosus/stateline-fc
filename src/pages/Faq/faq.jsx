@@ -25,8 +25,8 @@ function FAQ() {
         <ul className='content'>
           <li>Diversified</li>
           <li>Gonstead</li>
-          <li>flexion-distraction</li>
-          <li>Thompson drop</li>
+          <li>Flexion-Distraction</li>
+          <li>Thompson Drop</li>
           <li>Activator</li>
           <li>Webster</li>
         </ul>
