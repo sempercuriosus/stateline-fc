@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ServiceCard from './service-card';
 import Prenatal from './Prenatal/prenatal';
 import Pediatric from './Pediatric/pediatric';
@@ -58,7 +58,7 @@ function Services() {
             serviceTitle='Prenatal'
             serviceDescription='Family health starts in the prenatal period! We strive to empower
             and support moms from conception to birth and beyond'
-            serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
+            serviceImageSource='public/prenatal.jpeg'
             serviceImageAlt='Prenatal Image Placeholder'
             onOpenModal={openModal}
             serviceType='Prenatal'
@@ -70,7 +70,7 @@ function Services() {
             serviceTitle='Pediatric'
             serviceDescription='Kids need chiropractic too! We’ve had great results with colicky
             infants to chronically sick kids to sensory and spectrum challenges.'
-            serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
+            serviceImageSource='public/pediatric.jpg'
             serviceImageAlt='Pediatric Image Placeholder'
             onOpenModal={openModal}
             serviceType='Pediatric'
@@ -83,7 +83,7 @@ function Services() {
             serviceDescription=' We love to support entire families on their health journey.
             Consistent care can help everyone sleep better, feel better and
             enjoy life better, together!'
-            serviceImageSource='https://bulma.io/images/placeholders/128x128.png'
+            serviceImageSource='public/family.jpeg'
             serviceImageAlt='Family Image Placeholder'
             onOpenModal={openModal}
             serviceType='Family'
