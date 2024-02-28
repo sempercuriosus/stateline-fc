@@ -1,5 +1,5 @@
 import contactInfo from '../../pages/Contact/contact.js';
-import { colors } from '../../assets/utils/styles.js';
+import { colors } from '../../styles/styles.js';
 
 const contact = contactInfo.contactInfo;
 

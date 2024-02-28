@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import './service-card.css';
-import { colors } from '../../assets/utils/styles';
+import { colors } from '../../styles/styles';
 
 function ServiceCard({
   serviceTitle = '',

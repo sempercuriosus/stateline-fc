@@ -1,6 +1,6 @@
 import { Contact } from '../../pages';
 import { useRef } from 'react';
-import { colors } from '../../assets/utils/styles';
+import { colors } from '../../styles/styles';
 
 function Footer() {
   const scrollToRef = useRef();
