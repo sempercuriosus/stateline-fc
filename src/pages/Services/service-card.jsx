@@ -20,7 +20,9 @@ function ServiceCard({
         display: 'flex',
         flexDirection: 'column',
       }}>
-      <div className='block'>
+      <div
+        className='block'
+        style={{ flexGrow: 1 }}>
         <h3 className='title is-4 has-text-centered'>{serviceTitle}</h3>
         <div className='card-image'>
           <figure className='image is-4by5'>
@@ -29,20 +31,18 @@ function ServiceCard({
               alt={serviceImageAlt}
             />
           </figure>
+          <p className='card-content'>{serviceDescription}</p>
         </div>
-        <footer
-          className='card-footer'
-          style={{ marginTop: 'auto' }}>
-          <button
-            className='button card-footer-item'
-            style={{ backgroundColor: colors.DARK, color: colors.WHITE }}
-            onClick={() => onOpenModal(serviceType)}>
-            Learn More!
-          </button>
-        </footer>
-      </section>
-    </>
-
+      </div>
+      <footer className='card-footer'>
+        <button
+          className='button card-footer-item'
+          style={{ backgroundColor: colors.DARK, color: colors.WHITE }}
+          onClick={() => onOpenModal(serviceType)}>
+          Learn More!
+        </button>
+      </footer>
+    </div>
   );
 }
 
