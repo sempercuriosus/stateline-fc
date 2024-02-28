@@ -11,25 +11,24 @@ function ServiceCard({
   serviceType = '',
 }) {
   return (
-    <>
-      {/* Column */}
-      <section
-        id={'service-card-' + serviceTitle.toLowerCase()}
-        className='card column has-ratio block'
-        style={{
-          // minHeight: '500px',
-          //   maxHeight: '500px',
-          margin: '0.25em',
-        }}>
-        <div className='block'>
-          <h3 className='title is-4 block has-text-centered'>{serviceTitle}</h3>
-          <figure className='container image is-128x128'>
+    <div
+      id={'service-card-' + serviceTitle.toLowerCase()}
+      className='card column has-ratio'
+      style={{
+        minHeight: '400px',
+        margin: '0.25em',
+        display: 'flex',
+        flexDirection: 'column',
+      }}>
+      <div className='block'>
+        <h3 className='title is-4 has-text-centered'>{serviceTitle}</h3>
+        <div className='card-image'>
+          <figure className='image is-4by5'>
             <img
               src={serviceImageSource}
               alt={serviceImageAlt}
             />
           </figure>
-          <p className='card-content'>{serviceDescription}</p>
         </div>
         <footer
           className='card-footer'
@@ -43,6 +42,7 @@ function ServiceCard({
         </footer>
       </section>
     </>
+
   );
 }
 
