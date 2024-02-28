@@ -1,4 +1,5 @@
 import contactInfo from '../../pages/Contact/contact.js';
+import { colors } from '../../assets/utils/styles.js';
 
 const contact = contactInfo.contactInfo;
 
@@ -17,9 +18,15 @@ function Nav() {
   return (
     <>
       <nav
-        className='navbar is-info is-fixed-top'
+        className='navbar is-fixed-top'
         role='navigation'
-        aria-label='main navigation'>
+        aria-label='main navigation'
+        style={{
+          backgroundColor: colors.LIGHT,
+          color: colors.GREY,
+
+          letterSpacing: '1px',
+        }}>
         {/* Brand / Logo */}
         <div className='navbar-brand'>
           <a
@@ -43,15 +50,15 @@ function Nav() {
             <span aria-hidden='true'></span>
           </a> */}
         </div>
-
         <div
-          id='navbarBasicExample'
+          id='navbar'
           className='navbar-menu'>
           {/* Start */}
           <div className='navbar-start'>
             {/* Home */}
             <a
               className='navbar-item'
+              style={{ color: colors.BLACK }}
               onClick={() =>
                 window.scrollTo({
                   top: 0,
@@ -64,6 +71,7 @@ function Nav() {
             {/* Services */}
             <a
               className='navbar-item'
+              style={{ color: colors.BLACK }}
               onClick={() => {
                 handleNavClick('services');
               }}>
@@ -96,6 +104,7 @@ function Nav() {
             {/* About */}
             <a
               className='navbar-item'
+              style={{ color: colors.BLACK }}
               onClick={() => {
                 handleNavClick('about');
               }}>
@@ -104,6 +113,7 @@ function Nav() {
             {/* Contact */}
             <a
               className='navbar-item'
+              style={{ color: colors.BLACK }}
               onClick={() => {
                 handleNavClick('footer');
               }}>
@@ -114,6 +124,7 @@ function Nav() {
           <div className='navbar-end'>
             <a
               className='navbar-item'
+              style={{ color: colors.BLACK }}
               onClick={() => {
                 console.log(contact.scheduler);
                 handleNavClickExternal(contact.scheduler);

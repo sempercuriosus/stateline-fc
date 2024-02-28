@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './service-card.css';
+import { colors } from '../../assets/utils/styles';
 
 function ServiceCard({
   serviceTitle = '',
@@ -34,7 +35,8 @@ function ServiceCard({
           className='card-footer'
           style={{ marginTop: 'auto' }}>
           <button
-            className='button is-info card-footer-item'
+            className='button card-footer-item'
+            style={{ backgroundColor: colors.DARK, color: colors.WHITE }}
             onClick={() => onOpenModal(serviceType)}>
             Learn More!
           </button>

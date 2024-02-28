@@ -1,5 +1,6 @@
 import { Contact } from '../../pages';
 import { useRef } from 'react';
+import { colors } from '../../assets/utils/styles';
 
 function Footer() {
   const scrollToRef = useRef();
@@ -8,7 +9,8 @@ function Footer() {
     <footer
       id='footer'
       className='footer content'
-      ref={scrollToRef}>
+      ref={scrollToRef}
+      style={{ backgroundColor: colors.GREY }}>
       <Contact />
 
       <br />

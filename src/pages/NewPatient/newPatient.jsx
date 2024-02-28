@@ -1,4 +1,5 @@
 import contactInfo from '../Contact/contact.js';
+import { colors } from '../../assets/utils/styles.js';
 
 const contact = contactInfo.contactInfo;
 
@@ -15,7 +16,8 @@ function NewPatient() {
         </h3>
         <div className='block'>
           <button
-            className='button is-info'
+            className='button'
+            style={{ backgroundColor: colors.DARK, color: colors.WHITE }}
             onClick={() => {
               openScheduler(contact.scheduler);
             }}>
