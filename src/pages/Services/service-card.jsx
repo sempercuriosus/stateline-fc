@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './service-card.css';
+import { colors } from '../../assets/utils/styles';
 
 function ServiceCard({
   serviceTitle = '',
@@ -29,17 +30,19 @@ function ServiceCard({
             />
           </figure>
         </div>
-        <p className='card-content'>{serviceDescription}</p>
-      </div>
-      <div style={{ flex: '1' }}></div>
-      <footer className='card-footer'>
-        <button
-          className='button is-info card-footer-item'
-          onClick={() => onOpenModal(serviceType)}>
-          Learn More!
-        </button>
-      </footer>
-    </div>
+        <footer
+          className='card-footer'
+          style={{ marginTop: 'auto' }}>
+          <button
+            className='button card-footer-item'
+            style={{ backgroundColor: colors.DARK, color: colors.WHITE }}
+            onClick={() => onOpenModal(serviceType)}>
+            Learn More!
+          </button>
+        </footer>
+      </section>
+    </>
+
   );
 }
 
