@@ -19,6 +19,7 @@ function ServiceCard({
         margin: '0.25em',
         display: 'flex',
         flexDirection: 'column',
+        backgroundColor: colors.BACKGROUND_COLOR,
       }}>
       <div
         className='block'
