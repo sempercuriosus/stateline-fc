@@ -1,0 +1,7 @@
+# netlify.toml
+
+[build]
+# Specify the command to build your project
+  command = "vite build"        
+# Specify the directory to deploy
+  publish = "public"              
