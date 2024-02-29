@@ -1,5 +1,5 @@
 export const colors = {
-  BACKGROUND_COLOR: '#e6e6e6',
+  BACKGROUND_COLOR: '#f3f3f4',
   DARK: '#3E6268',
   LIGHT: '#3E8C98',
   GREY: '#CFCFCF',
