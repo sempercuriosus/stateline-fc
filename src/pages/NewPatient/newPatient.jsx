@@ -21,7 +21,7 @@ function NewPatient() {
             onClick={() => {
               openScheduler(contact.scheduler);
             }}>
-            Schedule An Appointment
+            Schedule An Appointment ↗︎
           </button>
         </div>
         <p className='block'>
