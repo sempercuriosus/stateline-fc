@@ -58,7 +58,7 @@ function Services() {
             serviceTitle='Prenatal'
             serviceDescription='Family health starts in the prenatal period! We strive to empower
             and support moms from conception to birth and beyond'
-            serviceImageSource='public/prenatal.jpeg'
+            serviceImageSource='public/images/prenatal.jpeg'
             serviceImageAlt='Prenatal Image Placeholder'
             onOpenModal={openModal}
             serviceType='Prenatal'
@@ -70,7 +70,7 @@ function Services() {
             serviceTitle='Pediatric'
             serviceDescription='Kids need chiropractic too! We’ve had great results with colicky
             infants to chronically sick kids to sensory and spectrum challenges.'
-            serviceImageSource='public/pediatric.jpg'
+            serviceImageSource='public/images/pediatric.jpg'
             serviceImageAlt='Pediatric Image Placeholder'
             onOpenModal={openModal}
             serviceType='Pediatric'
@@ -83,7 +83,7 @@ function Services() {
             serviceDescription=' We love to support entire families on their health journey.
             Consistent care can help everyone sleep better, feel better and
             enjoy life better, together!'
-            serviceImageSource='public/family.jpeg'
+            serviceImageSource='public/images/family.jpeg'
             serviceImageAlt='Family Image Placeholder'
             onOpenModal={openModal}
             serviceType='Family'

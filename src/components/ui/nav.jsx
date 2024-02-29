@@ -37,9 +37,9 @@ function Nav() {
             className='navbar-item'
             href=''>
             <img
-              src='src/assets/logo-white.png'
-              width='100'
-              height='100'
+              src='/public/images/s-logo.png'
+              width='40'
+              height='40'
             />
           </a>
 

@@ -1,6 +1,6 @@
 import { colors } from '../../styles/styles';
 
-const backgroundImageUrl = '/public/hero-placeholder.jpeg';
+const backgroundImageUrl = '/public/images/hero-placeholder.jpeg';
 
 function Intro() {
   return (
