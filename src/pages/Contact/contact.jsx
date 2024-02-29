@@ -45,7 +45,7 @@ function Contact() {
           </div>
           <p className='has-text-danger title is-6'>
             Important Note: Do not include personal or private medical
-            information inside the email.
+            information in the email.
           </p>
         </div>
 
@@ -54,12 +54,11 @@ function Contact() {
           <p>
             <span className='title is-6'>📅 Schedule An Appointment:</span>
           </p>
-
           <a
             href={contact.scheduler}
             target='_blank'
             rel='noreferrer'>
-            statelinefamilychiro
+            statelinefamilychiro ↗︎
           </a>
         </div>
 
@@ -68,8 +67,15 @@ function Contact() {
           <p>
             <span className='title is-6'>🕝 Hours:</span>
           </p>
+
           <p>
-            <strong>Monday</strong> {contact.hours.Delim} {contact.hours.Monday}{' '}
+            <strong>Monday to Friday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.All}{' '}
+          </p>
+
+          {/*<p>
+            <strong>Monday</strong> {contact.hours.Delim}{' '}
+            {contact.hours.Monday}{' '}
           </p>
           <p>
             <strong>Tuesday</strong> {contact.hours.Delim}{' '}
@@ -85,7 +91,7 @@ function Contact() {
           </p>
           <p>
             <strong>Friday</strong> {contact.hours.Delim} {contact.hours.Friday}{' '}
-          </p>
+          </p> */}
           <p>
             <strong>Saturday</strong> {contact.hours.Delim}{' '}
             {contact.hours.Saturday}{' '}
