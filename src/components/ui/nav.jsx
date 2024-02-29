@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import contactInfo from '../../pages/Contact/contact.js';
 import { colors } from '../../styles/styles.js';
 
@@ -15,9 +16,12 @@ const handleNavClickExternal = (targetedLocation) => {
 };
 
 function Nav() {
+  const [isActive, setisActive] = useState(false);
+
   return (
     <>
       <nav
+        // id='navbar'
         className='navbar is-fixed-top'
         role='navigation'
         aria-label='main navigation'
@@ -39,23 +43,28 @@ function Nav() {
             />
           </a>
 
-          {/* <a
+          <a
+            onClick={() => {
+              setisActive(!isActive);
+            }}
             role='button'
-            className='navbar-burger'
+            className={`navbar-burger burger ${isActive ? 'is-active' : ''}`}
             aria-label='menu'
             aria-expanded='false'
             data-target='navbarBasicExample'>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
             <span aria-hidden='true'></span>
-          </a> */}
+          </a>
         </div>
         <div
           id='navbar'
-          className='navbar-menu'>
+          className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
           {/* Start */}
+
           <div className='navbar-start'>
             {/* Home */}
+
             <a
               className='navbar-item'
               style={{ color: colors.BLACK }}
@@ -78,29 +87,6 @@ function Nav() {
               Services
             </a>
 
-            {/* Dropdown 
-            <div className='navbar-item has-dropdown is-hoverable'>
-              {/* <div className='navbar-dropdown'>
-                <a
-                  className='navbar-item'
-                  to='/Prenatal'>
-                  Prenatal
-                </a>
-                <a
-                  className='navbar-item'
-                  to='/Pediatric'>
-                  Pediatric
-                </a>
-                <a
-                  className='navbar-item'
-                  to='/Family'>
-                  Family
-                </a>
-                <a className='navbar-item'></a>
-                <hr className='navbar-divider' />
-              </div>
-            </div> */}
-
             {/* About */}
             <a
               className='navbar-item'
@@ -110,6 +96,7 @@ function Nav() {
               }}>
               About
             </a>
+
             {/* Contact */}
             <a
               className='navbar-item'
@@ -129,7 +116,7 @@ function Nav() {
                 console.log(contact.scheduler);
                 handleNavClickExternal(contact.scheduler);
               }}>
-              Schedule An Appointment
+              Schedule An Appointment ↗︎
             </a>
           </div>
         </div>
