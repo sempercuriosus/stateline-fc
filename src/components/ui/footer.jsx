@@ -2,6 +2,8 @@ import { Contact } from '../../pages';
 import { useRef } from 'react';
 import { colors } from '../../styles/styles';
 
+const currentYear = 2024;
+
 function Footer() {
   const scrollToRef = useRef();
 
@@ -12,6 +14,13 @@ function Footer() {
       ref={scrollToRef}
       style={{ backgroundColor: colors.GREY }}>
       <Contact />
+
+      <div className='content has-text-centered'>
+        <p>
+          {' '}
+          Copyright &copy; Stateline Family Chiropractic, LLC {currentYear}
+        </p>
+      </div>
 
       <br />
 
