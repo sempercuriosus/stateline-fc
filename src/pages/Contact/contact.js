@@ -2,6 +2,7 @@ const contactInfo = {
   phoneNumber: '803-358-8340',
   email: 'statelinefamilychiro@proton.me',
   hours: {
+    All: '3pm - 6pm',
     Monday: '3pm - 6pm',
     Tuesday: '3pm - 6pm',
     Wednesday: '3pm - 6pm',

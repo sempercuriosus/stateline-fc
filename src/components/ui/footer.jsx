@@ -18,7 +18,7 @@ function Footer() {
       <div className='content has-text-centered'>
         Made with 🧡 and ☕️ by{' '}
         <a
-          href='https://github.com/sempercuriosus'
+          href='https://thirdcoast.dev'
           target='_blank'
           rel='noreferrer'>
           <strong>Keys</strong>
