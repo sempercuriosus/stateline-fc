@@ -12,7 +12,6 @@ function Hero() {
           paddingLeft: '0',
           paddingRight: '0',
           paddingBottom: '1em',
-          marginBottom: '-2.5em',
         }}>
         <div
           className='hero'
