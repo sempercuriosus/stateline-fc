@@ -1,8 +1,12 @@
+import { colors } from '../../styles/styles';
+
 function Intro() {
   return (
     <>
-      <section>
-        <h1 className='title'>Welcome!</h1>
+      <section
+        className='section is-medium box'
+        style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
+        <h1 className='title is-1 has-text-centered'>Welcome!</h1>
 
         <p>
           <strong>At Stateline Family Chiropractic</strong>, we strive to
@@ -12,7 +16,6 @@ function Intro() {
           body function as intended and heal itself from life’s stressors.
         </p>
       </section>
-      <hr className='snap-stop' />
     </>
   );
 }
