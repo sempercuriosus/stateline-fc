@@ -4,7 +4,7 @@ function Intro() {
   return (
     <>
       <section
-        className='section is-medium box snap-stop'
+        className='section is-medium snap-stop'
         style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
         <h1 className='title is-1 has-text-centered'>Welcome!</h1>
 
