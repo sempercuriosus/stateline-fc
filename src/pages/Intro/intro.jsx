@@ -4,9 +4,9 @@ function Intro() {
   return (
     <>
       <section
-        className='section is-medium box snap-stop'
+        className='section is-medium box'
         style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-        <h1 className='title is-1 has-text-centered'>Welcome!</h1>
+        <h1 className='title is-1 has-text-centered snap-stop'>Welcome!</h1>
 
         <p>
           <strong>At Stateline Family Chiropractic</strong>, we strive to
