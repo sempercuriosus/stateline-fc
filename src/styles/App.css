@@ -3,15 +3,11 @@ body {
 }
 
 html {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   scroll-padding-top: 4.5em;
 
 }
 
 .snap-stop {
   scroll-snap-align: start;
-}
-
-main {
-  background-color: rgb(245, 245, 245)
 }
