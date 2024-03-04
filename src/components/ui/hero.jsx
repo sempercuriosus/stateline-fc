@@ -5,23 +5,15 @@ function Hero() {
   return (
     <>
       <section
-        className='hero section is-medium'
+        className='hero section'
         style={{
           backgroundColor: '#3E6268',
           borderRadius: '6px',
           paddingLeft: '0',
           paddingRight: '0',
-          paddingBottom: '1em',
+          // paddingBottom: '1em',
         }}>
-        <div
-          className='hero'
-          style={{
-            backgroundImage: `url(${backgroundImageUrl})`,
-            backgroundPosition: 'center top',
-            backgroundSize: 'contain',
-            borderRadius: '6px',
-            backgroundRepeat: 'no-repeat',
-          }}>
+        <div className='hero'>
           {/* Header */}
           {/* 
           <div
@@ -29,20 +21,34 @@ function Hero() {
             style={{
               fontWeight: 'bold',
               borderRadius: '6px',
-              //   paddingBottom: '1em',
             }}></div> */}
 
           {/* Body */}
           <div className='hero-body'>
-            <div className='container is-fullhd'></div>
+            <div className='is-fullhd'>
+              <figure className='container'>
+                <img
+                  className='container'
+                  src={backgroundImageUrl}
+                  alt='Background'
+                  style={{
+                    backgroundColor: 'black',
+                    padding: '3em',
+                    borderRadius: '6px',
+                    display: 'block',
+                    margin: '0 auto',
+
+                    backgroundSize: 'contain',
+                  }}
+                />
+              </figure>
+            </div>
           </div>
 
           {/* Footer */}
-          <div
-            className='hero-foot'
-            style={{
-              paddingBottom: '1em',
-            }}></div>
+          <div className='hero-foot'>
+            <div className='snap-stop'></div>
+          </div>
         </div>
         <br />
       </section>

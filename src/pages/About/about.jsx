@@ -1,10 +1,14 @@
+import { colors } from '../../styles/styles.js';
+
 function About() {
   return (
     <>
       <section
         id='about'
-        className='section snap-stop'>
+        className='section snap-stop box'
+        style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
         <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
+
         <div className=' columns'>
           <aside className='column is-half-mobile  is-one-quarter container'>
             {/* <br /> */}

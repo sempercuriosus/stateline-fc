@@ -1,10 +1,13 @@
 import contactInfo from '../Contact/contact.js';
+import { colors } from '../../styles/styles.js';
 
 const contact = contactInfo.contactInfo;
 
 function FAQ() {
   return (
-    <section className='section snap-stop'>
+    <section
+      className='section snap-stop box'
+      style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
       <h2 className='title'>Frequently Asked Questions</h2>
 
       <div className='block'>
