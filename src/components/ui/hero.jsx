@@ -46,9 +46,7 @@ function Hero() {
           </div>
 
           {/* Footer */}
-          <div className='hero-foot'>
-            <div className='snap-stop'></div>
-          </div>
+          <div className='hero-foot'></div>
         </div>
         <br />
       </section>

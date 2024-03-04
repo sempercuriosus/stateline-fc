@@ -6,7 +6,7 @@ const contact = contactInfo.contactInfo;
 function FAQ() {
   return (
     <section
-      className='section snap-stop box'
+      className='section box snap-stop'
       style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
       <h2 className='title'>Frequently Asked Questions</h2>
 
