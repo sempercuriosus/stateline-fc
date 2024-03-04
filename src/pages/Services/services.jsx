@@ -113,7 +113,6 @@ function Services() {
           </div>
         )}
       </section>
-      <hr className='snap-stop' />
     </>
   );
 }
