@@ -9,7 +9,7 @@ function About() {
           <aside className='column is-half-mobile  is-one-quarter container'>
             {/* <br /> */}
             <img
-              src='/images/dr-katie-pic.jpg'
+              src='/images/dr-katie.jpg'
               alt='Dr. Katie Picture'
               height={325}
               width={245}
