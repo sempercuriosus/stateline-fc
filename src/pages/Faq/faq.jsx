@@ -6,9 +6,9 @@ const contact = contactInfo.contactInfo;
 function FAQ() {
   return (
     <section
-      className='section box'
+      className='section box snap-stop'
       style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-      <h2 className='title snap-stop'>Frequently Asked Questions</h2>
+      <h2 className='title'>Frequently Asked Questions</h2>
 
       <div className='block'>
         <p>

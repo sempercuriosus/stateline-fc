@@ -5,9 +5,9 @@ function About() {
     <>
       <section
         id='about'
-        className='section box'
+        className='section box snap-stop'
         style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-        <h2 className='title has-text-centered snap-stop'>Meet Dr. Katie</h2>
+        <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
 
         <div className=' columns'>
           <aside className='column is-half-mobile  is-one-quarter container'>
