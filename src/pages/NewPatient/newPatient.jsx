@@ -11,9 +11,12 @@ function NewPatient() {
   return (
     <>
       <section
-        className='section snap-stop'
-        style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-        <h3 className='title is-3 has-text-centered'>
+        className='section snap-stop block'
+        style={{
+          backgroundColor: colors.STEEL_TEAL_LIGHT,
+          borderRadius: '50px',
+        }}>
+        <h3 className='title is-2 has-text-centered'>
           New Patient Information
         </h3>
         <div className='block'>

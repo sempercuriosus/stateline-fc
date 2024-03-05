@@ -13,7 +13,7 @@ function App() {
       <Hero />
 
       <main
-        className='container section has-navbar-fixed-top'
+        className='section has-navbar-fixed-top'
         style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
         <Home />
       </main>
