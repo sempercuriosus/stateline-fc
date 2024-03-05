@@ -7,8 +7,11 @@ function FAQ() {
   return (
     <section
       className='section snap-stop'
-      style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-      <h2 className='title'>Frequently Asked Questions</h2>
+      style={{
+        backgroundColor: colors.STEEL_TEAL_LIGHT,
+        borderRadius: '107px 13%',
+      }}>
+      <h2 className='title is-2'>Frequently Asked Questions</h2>
 
       <div className='block'>
         <p>

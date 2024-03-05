@@ -3,6 +3,7 @@ import ServiceCard from './service-card';
 import Prenatal from './Prenatal/prenatal';
 import Pediatric from './Pediatric/pediatric';
 import Family from './Family/family';
+import { colors } from '../../styles/styles';
 
 function Services() {
   const [isModalActive, setIsModalActive] = useState(false);
@@ -44,9 +45,13 @@ function Services() {
   return (
     <>
       <section
-        className='section snap-stop'
-        id='services'>
-        <h2 className='title has-text-centered block'>What We Offer</h2>
+        className='section snap-stop block'
+        id='services'
+        style={{
+          backgroundColor: colors.STEEL_TEAL_LIGHT,
+          borderRadius: '60px 15%',
+        }}>
+        <h2 className='title is-2 has-text-centered block'>What We Do</h2>
 
         {/* Column Container */}
         <div className='columns'>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import contactInfo from '../../pages/Contact/contact.js';
 import { colors } from '../../styles/styles.js';
+import '../../styles/styles.js';
 
 const contact = contactInfo.contactInfo;
 
@@ -84,7 +85,7 @@ function Nav() {
               onClick={() => {
                 handleNavClick('services');
               }}>
-              Services
+              What We Do
             </a>
 
             {/* About */}
@@ -94,7 +95,7 @@ function Nav() {
               onClick={() => {
                 handleNavClick('about');
               }}>
-              About
+              About The Doctor
             </a>
 
             {/* Contact */}
@@ -104,11 +105,13 @@ function Nav() {
               onClick={() => {
                 handleNavClick('footer');
               }}>
-              Contact
+              Contact Us!
             </a>
           </div>
 
-          <div className='navbar-end'>
+          <div
+            className='navbar-end'
+            style={{ backgroundColor: colors.LIGHT }}>
             <a
               className='navbar-item'
               style={{ color: colors.BLACK }}
@@ -116,7 +119,8 @@ function Nav() {
                 console.log(contact.scheduler);
                 handleNavClickExternal(contact.scheduler);
               }}>
-              Schedule An Appointment ↗︎
+              Schedule An Appointment
+              <span className='icon-size'> ↗︎</span>
             </a>
           </div>
         </div>

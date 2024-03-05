@@ -5,9 +5,12 @@ function About() {
     <>
       <section
         id='about'
-        className='section snap-stop'
-        style={{ backgroundColor: colors.BACKGROUND_COLOR }}>
-        <h2 className='title has-text-centered'>Meet Dr. Katie</h2>
+        className='section snap-stop block'
+        style={{
+          backgroundColor: colors.STEEL_TEAL_LIGHT,
+          borderRadius: '17% 225px',
+        }}>
+        <h2 className='title is-2 has-text-centered'>Meet Dr. Katie</h2>
 
         <div className=' columns'>
           <aside className='column is-half-mobile  is-one-quarter container'>

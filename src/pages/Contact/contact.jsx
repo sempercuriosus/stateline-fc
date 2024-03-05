@@ -5,9 +5,7 @@ const contact = contactInfo.contactInfo;
 function Contact() {
   return (
     <>
-      <div className='title is-5 has-text-centered snap-stop'>
-        Contact Us | Stateline Family Chriopractic
-      </div>
+      <div className='title is-3 has-text-centered snap-stop'>Contact Info</div>
       <hr />
 
       {/* Columns Container */}
